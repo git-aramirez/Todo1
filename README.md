@@ -16,6 +16,9 @@ There are the following functionalities:
 3) Register Products: this functionality allows to increase the number of products created.
 4) Add to cart: this functionality allows to add a product to the shopping cart
 
+# Important
+All products have one unit in the store!
+
 # Tools Development
 This project was developed using library React, HTML, CSS
 
