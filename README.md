@@ -19,7 +19,7 @@ There are the following functionalities:
 # Tools Development
 This project was developed using library React, HTML, CSS
 
-## Lbraries
+## Libraries
 1) Antd
 2) crypto-js
 3) @ant-design/icons
@@ -29,7 +29,8 @@ This project was developed using library React, HTML, CSS
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Test
+### `npm test`
+You can run the test with this command
 
 
 
