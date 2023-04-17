@@ -31,6 +31,7 @@ function CreateProduct(props) {
     }
 
     const handleCancel = () => {
+        clearInputs();
         props.setIsCreateProductsOpen(false);
     };
 

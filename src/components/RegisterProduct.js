@@ -19,12 +19,19 @@ function RegisterProduct(props) {
             );
             props.setProducts([...listProduct]);
         }
+        clearInputs();
         props.setIsRegisterProductsOpen(false);
     };
 
     const handleCancel = () => {
+        clearInputs();
         props.setIsRegisterProductsOpen(false);
     };
+
+    const clearInputs = () => {
+        setInputNameProduct('');
+        setInputQuantity(0);
+    }
 
     return (
         <Modal

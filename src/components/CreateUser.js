@@ -8,8 +8,8 @@ function CreateUser(props) {
     const [inputUserName, setInputUserName] = useState('');
     const [inputPassword, setInputPassword] = useState('');
 
-    const handleOk = async () => {
-        await props.setUsers([...props.users,
+    const handleOk = () => {
+        props.setUsers([...props.users,
         {
             id: props.users.length + 1,
             userName: inputUserName,
@@ -25,6 +25,7 @@ function CreateUser(props) {
     }
 
     const handleCancel = () => {
+        clearInputs();
         props.setIsCreateUserOpen(false);
     };
 

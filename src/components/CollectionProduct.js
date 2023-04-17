@@ -1,7 +1,7 @@
 import { productsData } from '../data/productsData';
 import {  Button } from 'antd';
 
-export const CollectionProduct = ({products, setProducts
+export const CollectionProduct = ({products, setProducts, total, setTotal
 }) => {
     
     const onAddProduct = product => {
@@ -11,10 +11,10 @@ export const CollectionProduct = ({products, setProducts
                     ? { ...item, quantityAdded: item.quantityAdded + 1 }
                     : item
             );
+            console.log(product.price);
+            setTotal(total + product.price);
             setProducts([...listProduct]);
         }
-
-       
     };
     
     const isItDisable = product => {
